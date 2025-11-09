@@ -1,0 +1,262 @@
+/* Scroll to top button - Fixed size for all devices */
+.scroll-to-top {
+  width: 50px !important;
+  height: 50px !important;
+  position: fixed !important;
+  right: 1.5rem !important;
+  bottom: 1.5rem !important;
+  border-radius: 50% !important;
+  z-index: 1000 !important;
+}
+
+/* Mobile First Responsive Design */
+
+/* Base Mobile Styles (320px+) */
+@media (max-width: 768px) {
+  /* Container and Layout */
+  .container {
+    padding: 0 1rem !important;
+    max-width: 100% !important;
+  }
+  
+  section {
+    padding: 3rem 1rem !important;
+  }
+  
+  /* Typography */
+  h1 {
+    font-size: clamp(2rem, 8vw, 3rem) !important;
+    line-height: 1.2 !important;
+  }
+  
+  h2 {
+    font-size: clamp(1.5rem, 6vw, 2rem) !important;
+    margin-bottom: 1.5rem !important;
+  }
+  
+  h3 {
+    font-size: clamp(1.25rem, 5vw, 1.5rem) !important;
+  }
+  
+  p {
+    font-size: 0.9rem !important;
+    line-height: 1.6 !important;
+  }
+  
+  /* Cards */
+  .card {
+    padding: 1.5rem !important;
+    margin-bottom: 1.5rem !important;
+    width: 100% !important;
+    box-sizing: border-box !important;
+  }
+  
+  /* Buttons - exclude navbar and scroll buttons */
+  button:not(.mobile-toggle):not([aria-label]):not([style*="position: fixed"]):not([style*="border-radius: 50%"]),
+  .btn:not(.scroll-btn),
+  a[style*="padding"]:not([href*="#"]) {
+    width: 100% !important;
+    max-width: 280px !important;
+    margin: 0.75rem auto !important;
+    display: block !important;
+    text-align: center !important;
+    padding: 1rem 1.5rem !important;
+    font-size: 1rem !important;
+  }
+  
+  /* Scroll to top button - force original size */
+  button[style*="position: fixed"][style*="border-radius: 50%"] {
+    width: 48px !important;
+    height: 48px !important;
+    max-width: none !important;
+    margin: 0 !important;
+    padding: 0 !important;
+  }
+  
+  /* Program tab buttons - keep original width */
+  section#programme button {
+    width: auto !important;
+    max-width: 200px !important;
+  }
+  
+  /* Theme toggle button */
+  button[aria-label*="mode"] {
+    width: auto !important;
+    max-width: none !important;
+    margin: 0 !important;
+  }
+  
+  /* Logo mobile size */
+  .site-header img {
+    height: 40px !important;
+  }
+  
+  .site-header.scrolled img {
+    height: 36px !important;
+  }
+  
+  /* Header height mobile */
+  .site-header {
+    padding: 0.5rem 0 !important;
+  }
+  
+  .site-header.scrolled {
+    padding: 0.4rem 0 !important;
+  }
+  
+  .site-header .container {
+    min-height: 50px !important;
+  }
+  
+  /* Images */
+  img {
+    max-width: 100% !important;
+    height: auto !important;
+  }
+  
+  /* Grid Layouts - Force Single Column */
+  section#à-propos .card + div,
+  section#conférenciers > div:last-child,
+  section#jury-cv > div:last-child,
+  section#contact > div:last-child {
+    display: flex !important;
+    flex-direction: column !important;
+    gap: 2rem !important;
+  }
+  
+  /* Benefits Grid */
+  section#à-propos div[style*="grid-template-columns"] {
+    display: flex !important;
+    flex-direction: column !important;
+    gap: 1.5rem !important;
+  }
+  
+  /* Partners Grid - 2 columns on mobile */
+  section#partenaires div[style*="grid-template-columns"] {
+    display: grid !important;
+    grid-template-columns: 1fr 1fr !important;
+    gap: 1rem !important;
+  }
+  
+  /* Program Tabs */
+  section#programme div[style*="justify-content: center"] {
+    flex-direction: column !important;
+    align-items: center !important;
+    gap: 0.75rem !important;
+  }
+  
+  section#programme button {
+    width: 200px !important;
+    max-width: none !important;
+  }
+  
+  /* Schedule Cards */
+  section#programme .card div[style*="display: flex"] {
+    flex-direction: column !important;
+    gap: 1rem !important;
+    align-items: flex-start !important;
+  }
+  
+  section#programme .card div[style*="minWidth: fit-content"] {
+    width: 100% !important;
+    text-align: center !important;
+    margin-bottom: 1rem !important;
+  }
+  
+  /* Speakers Cards */
+  section#conférenciers .card {
+    flex-direction: column !important;
+    text-align: center !important;
+    align-items: center !important;
+  }
+  
+  section#conférenciers .card > div:first-child {
+    margin-bottom: 1.5rem !important;
+  }
+  
+  /* Modal */
+  .card.glow-pulse {
+    width: 95vw !important;
+    max-width: 400px !important;
+    max-height: 90vh !important;
+    overflow-y: auto !important;
+    padding: 1.5rem !important;
+  }
+  
+  /* Form Grid */
+  .card form div[style*="grid-template-columns"] {
+    display: flex !important;
+    flex-direction: column !important;
+    gap: 1rem !important;
+  }
+  
+  /* Hero Section */
+  section#accueil {
+    padding: 5rem 1rem !important;
+    min-height: 100vh !important;
+  }
+  
+  section#accueil h1 {
+    font-size: clamp(2.5rem, 10vw, 4rem) !important;
+  }
+  
+  section#accueil div[style*="display: flex"] {
+    flex-direction: column !important;
+    gap: 1rem !important;
+    align-items: center !important;
+  }
+}
+
+/* Small Mobile (480px and below) */
+@media (max-width: 480px) {
+  section {
+    padding: 2rem 0.75rem !important;
+  }
+  
+  .card {
+    padding: 1rem !important;
+  }
+  
+  /* Single column for partners */
+  section#partenaires div[style*="grid-template-columns"] {
+    grid-template-columns: 1fr !important;
+  }
+  
+  /* Smaller buttons */
+  button:not(.mobile-toggle):not([aria-label]),
+  .btn {
+    padding: 0.875rem 1.25rem !important;
+    font-size: 0.9rem !important;
+  }
+}
+
+/* Very Small Mobile (360px and below) */
+@media (max-width: 360px) {
+  .container {
+    padding: 0 0.75rem !important;
+  }
+  
+  section {
+    padding: 1.5rem 0.5rem !important;
+  }
+  
+  .card {
+    padding: 0.75rem !important;
+  }
+  
+  h1 {
+    font-size: 2rem !important;
+  }
+  
+  h2 {
+    font-size: 1.5rem !important;
+  }
+  
+  /* Scroll to top button */
+  .scroll-to-top {
+    width: 50px !important;
+    height: 50px !important;
+    right: 1rem !important;
+    bottom: 1rem !important;
+  }
+}
