@@ -57,23 +57,23 @@ export default function Home({ onAdminLogin }) {
 
   const scheduleDay1 = [
     { time: "8:30 – 9:00", event: "Accueil & Check-in des participants" },
-      {
-    time: "9:00 – 9:20",
+    {
+    time: "9:00 – 9:15",
     event: "Mot de Monsieur le Président de l'UCA",
     speaker: "Professeur Blaïd BOUGADIR",
     location: "Amphithéâtre"
   },
   {
-    time: "9:20 – 9:45",
+    time: "9:15 – 9:30",
     event: "Mot de Monsieur le Directeur de l'ENSA-M",
     speaker: "Professeur Hassan AYAD",
     location: "Amphithéâtre"
   },
-    { time: "9:45 – 10:00", event: "Présentation de l'Office Marocain de la Propriété Industrielle et Commerciale - OMPIC", location: "Amphithéâtre" },
-    { time: "10:00 – 11:00", event: "Conférence : L'alternance et la Recherche Appliquée: De nouveau horizons pour les écoles d'ingénieurs", speaker: "REKLAOUI KAMAL & ALEXIS TODOSKOFF", location: "Amphithéâtre" },
-    { time: "11:15 – 12:15", event: "PANEL 1: IA et transformation du salariat: révolution ou évolution ?", location: "Amphithéâtre" },
-    { time: "12:15 – 13:15", event: "PANEL 2: Innover, entreprendre, évoluer: l'impact de l'IA sur les leaders de demain", location: "Amphithéâtre" },
-    { time: "13:15 – 18:00", event: "Sessions de recrutement et entretiens individuels avec les entreprises partenaires", location: "salles / stands dédiés" }
+    { time: "9:30 – 09:45", event: "Présentation de l'Office Marocain de la Propriété Industrielle et Commerciale - OMPIC", location: "Amphithéâtre" },
+    { time: "9:45 – 10:45", event: "Conférence : L'alternance et la Recherche Appliquée: De nouveau horizons pour les écoles d'ingénieurs", speaker: "REKLAOUI KAMAL & ALEXIS TODOSKOFF", location: "Amphithéâtre" },
+    { time: "11:00 – 12:00", event: "PANEL 1: IA et transformation du salariat: révolution ou évolution ?", location: "Amphithéâtre" },
+    { time: "12:00 – 13:00", event: "PANEL 2: Innover, entreprendre, évoluer: l'impact de l'IA sur les leaders de demain", location: "Amphithéâtre" },
+    { time: "14:15 – 18:00", event: "Sessions de recrutement et entretiens individuels avec les entreprises partenaires", location: "salles / stands dédiés" }
   ];
 
   const scheduleDay2 = [
@@ -236,7 +236,7 @@ export default function Home({ onAdminLogin }) {
       </button>
 
       <a
-        href="/plan.pdf"
+        href="/programme.pdf"
         download
         style={{
           padding: '0.9rem 2.2rem',
