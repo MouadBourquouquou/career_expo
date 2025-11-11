@@ -152,41 +152,6 @@ export default function Edition2023() {
           </div>
         </motion.div>
 
-        {/* PDF Download */}
-        <motion.div
-          initial={{ opacity: 0, y: 40 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.8, delay: 0.6 }}
-          style={{ textAlign: 'center' }}
-        >
-          <motion.a
-            href="/editions/ece2.pdf"
-            download
-            whileHover={{ scale: 1.05 }}
-            whileTap={{ scale: 0.95 }}
-            style={{
-              display: 'inline-flex',
-              alignItems: 'center',
-              gap: '1rem',
-              background: '#4494E4',
-              color: '#0b0b0e',
-              padding: '1.2rem 2.5rem',
-              borderRadius: '30px',
-              textDecoration: 'none',
-              fontWeight: '700',
-              fontSize: '0.65rem',
-              cursor: 'pointer',
-              transition: 'all 0.3s',
-              boxShadow: '0 10px 30px rgba(249, 178, 51, 0.3)'
-            }}
-          >
-            <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
-              <path d="M14,2H6A2,2 0 0,0 4,4V20A2,2 0 0,0 6,22H18A2,2 0 0,0 20,20V8L14,2M18,20H6V4H13V9H18V20Z" />
-            </svg>
-            Télécharger l'archive PDF - Édition 2023
-          </motion.a>
-        </motion.div>
-
       </div>
     </main>
   );

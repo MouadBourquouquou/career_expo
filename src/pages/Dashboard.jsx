@@ -8,7 +8,7 @@ export default function Dashboard({ onLogout }) {
     { id: 1, name: "Bank of Africa", logo: "/Logos/BankOfAfrica.png", website: "https://www.bankofafrica.ma/" },
     { id: 2, name: "Capgemini", logo: "/Logos/capgemini.png", website: "https://www.capgemini.com/" },
     { id: 3, name: "ENSA", logo: "/Logos/ensa.png", website: "https://www.ensa.ac.ma/" },
-    { id: 4, name: "ENSAM", logo: "/Logos/ENSAM.png", website: "https://www.ensam.ac.ma/" },
+    { id: 4, name: "ENSA-M", logo: "/Logos/ENSAM.png", website: "https://www.ensam.ac.ma/" },
     { id: 5, name: "Green Energy Park", logo: "/Logos/greenenergypark.png", website: "https://www.greenenergypark.ma/" },
     { id: 6, name: "ISTYA", logo: "/Logos/istya.png", website: "https://www.istya.ma/" },
     { id: 7, name: "Lear Corporation", logo: "/Logos/lear.png", website: "https://www.lear.com/" },
