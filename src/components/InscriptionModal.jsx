@@ -111,9 +111,9 @@ const handleSubmit = async (e) => {
                       <label style={{ display: 'block', marginBottom: '0.5rem', color: 'var(--violet)', fontWeight: '600', fontSize: '0.95rem' }}> Niveau d'études </label> 
                       <select name="niveau" required style={{...inputStyle, color: 'var(--text)'}}> 
                         <option value="" style={{background: 'var(--depth-1)', color: 'var(--text)'}}>Sélectionnez votre niveau</option> 
-                      <option value="BAC +1" style={{background: 'var(--depth-1)', color: 'var(--text)'}}>Licence 1</option> 
-                      <option value="BAC +2" style={{background: 'var(--depth-1)', color: 'var(--text)'}}>Licence 2</option> 
-                      <option value="BAC +3" style={{background: 'var(--depth-1)', color: 'var(--text)'}}>Licence 3</option> 
+                      <option value="BAC +1" style={{background: 'var(--depth-1)', color: 'var(--text)'}}>BAC + 1</option> 
+                      <option value="BAC +2" style={{background: 'var(--depth-1)', color: 'var(--text)'}}>BAC + 2</option> 
+                      <option value="BAC +3" style={{background: 'var(--depth-1)', color: 'var(--text)'}}>BAC + 3</option> 
                       <option value="BAC +4" style={{background: 'var(--depth-1)', color: 'var(--text)'}}>BAC + 4</option> 
                       <option value="BAC +5" style={{background: 'var(--depth-1)', color: 'var(--text)'}}>BAC + 5</option>
                        </select> 

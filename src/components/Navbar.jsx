@@ -86,7 +86,7 @@ export default function Navbar({ dark, setDark }) {
             return (
               <a
                 key={item.id}
-                href={item.id !== "éditions" ? `/#${item.id}` : "/edition2024"}
+                href={item.id !== "éditions" ? `/#${item.id}` : "/2024"}
                 className="nav-link nav-link-3d luxury-focus"
                 style={{
                   color: isActive ? '#4494E4' : 'var(--text)',
@@ -121,13 +121,7 @@ export default function Navbar({ dark, setDark }) {
           </div>
 
           {/* Bouton Mode Sombre */}
-          <button
-            onClick={() => { setDark(!dark); setMobileOpen(false); }}
-            style={{ background: 'none', border: 'none', cursor: 'pointer' }}
-            aria-label={dark ? 'Activer le mode clair' : 'Activer le mode sombre'}
-          >
-            {dark ? <Moon color="#4494E4" size={22} /> : <Sun color="#4494E4" size={22} />}
-          </button>
+          
         </nav>
       </div>
     </header>

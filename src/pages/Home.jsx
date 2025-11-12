@@ -232,7 +232,7 @@ export default function Home({ onAdminLogin }) {
           e.currentTarget.style.color = '#4494E4';
         }}
       >
-        Postuler à la compétition
+        Postuler à la compétition des CV
       </button>
 
       <a
