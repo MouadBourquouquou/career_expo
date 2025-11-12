@@ -83,6 +83,28 @@ export default function Navbar({ dark, setDark }) {
           {menuItems.map(item => {
             const isActive = activeSection === item.id;
 
+            // Special handling for old edition page
+            if (item.id === 'éditions') {
+              return (
+                <a
+                  key={item.id}
+                  href="/2024"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="nav-link nav-link-3d luxury-focus"
+                  style={{
+                    color: isActive ? '#4494E4' : 'var(--text)',
+                    textDecoration: 'none',
+                    fontWeight: isActive ? 600 : 500,
+                    position: 'relative',
+                    transition: 'all 0.3s ease'
+                  }}
+                >
+                  {item.label}
+                </a>
+              );
+            }
+
             return (
               <a
                 key={item.id}
@@ -96,11 +118,6 @@ export default function Navbar({ dark, setDark }) {
                   transition: 'all 0.3s ease'
                 }}
                 onClick={(e) => {
-                  if (item.id === 'éditions') {
-                    // Laisse le lien agir normalement → pas de preventDefault ici
-                    return;
-                  }
-
                   // Pour tous les autres liens
                   e.preventDefault();
                   if (window.location.pathname !== '/') {

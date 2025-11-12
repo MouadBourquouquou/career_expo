@@ -1234,7 +1234,7 @@ export default function Home({ onAdminLogin }) {
                       fontSize: '0.875rem',
                       fontWeight: '600'
                     }}>
-                      www.ensa-marrakech.uca.ma
+                      ensa-marrakech.uca.ma
                     </a>
                   </div>
                 </div>
